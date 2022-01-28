@@ -47,4 +47,11 @@ tar -xzf smartgit-linux-21_2_2.tar.gz
 sudo mv smartgit /opt/
 sudo sh /opt/smartgit/bin/add-menuitem.sh
 
+cd ~
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i --force-depends google-chrome-stable_current_amd64.deb
+sudo apt remove firefox
 
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+ssh-keygen -t rsa -q -f "$HOME/.ssh/id_rsa" -N ""
