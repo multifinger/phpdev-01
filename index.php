@@ -1,7 +1,7 @@
 <?php
 
-include './NodeInterface.php';
-include './Node.php';
+include './tree/NodeInterface.php';
+include './tree/Node.php';
 
 $tree = (new \Node('Electronics'))
     ->addChild(
@@ -23,5 +23,7 @@ $tree = (new \Node('Electronics'))
         <h1><?php echo "Hello world!"; ?></h1>
         <p>I'm <?php echo $_REQUEST['name'] ?? 'Noname'; ?></p>
         <pre><?php echo $tree; ?></pre>
-    </body>    
+        <p><a href="/war.php">war.php</a></p>
+        <p><a href="/lsb.php">lsb.php</a></p>
+    </body>
 </html>
