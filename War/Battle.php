@@ -25,15 +25,15 @@ class Battle
         $this->strategy->init();
     }
 
+    public function canFight(): bool
+    {
+        return $this->strategy->canFight();
+    }
+
     public function fight()
     {
         $this->duration++;
         $this->strategy->execute();
-    }
-
-    public function canFight(): bool
-    {
-        return $this->strategy->canFight();
     }
 
     public function getVars(): array

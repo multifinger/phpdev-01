@@ -33,7 +33,7 @@ UnitFactory::addCavalry($army2, 25);
 $battle = new Battle(Strategy\SimpleStrategy::class, $army1, $army2);
 //$battle = new Battle(Strategy\CohortStrategy::class, $army1, $army2);
 //$battle->addModifier(Modifier\TerrainIce::class);
-$battle->addModifier(Modifier\WeatherRain::class);
+$battle->addModifier(Modifier\WeatherRain::class); // Weather + Terrain - не работает вмеcте
 $battle->init();
 while ($battle->canFight()) $battle->fight();
 

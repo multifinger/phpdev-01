@@ -2,7 +2,8 @@
 
 namespace War\Unit;
 
-class AbstractUnit
+// Composite
+class AbstractUnit /* Unit not abstract !!! */
 {
 
     protected string $name;

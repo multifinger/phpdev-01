@@ -24,6 +24,7 @@ class Toyota extends Car
         return 'Toyota';
     }
 }
+
 echo '<pre>';
 echo "Car::run LSB FALSE: ";
 echo Car::run();
